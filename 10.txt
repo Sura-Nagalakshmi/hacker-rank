@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    lst=[]
+    lst_score= []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        lst+=[[name,score]]
+        lst_score+=[score]
+    x=sorted(set(lst_score))[1]
+    for l,s in sorted(lst):
+        if s==x:
+            print(l)
+        
